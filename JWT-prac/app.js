@@ -8,8 +8,8 @@ console.log(token);
 
 // 데이터 복호화
 const decodeValue = jwt.decode(token);
-console.log(decodeValue);
+console.log(decodeValue); // { myPayloadData: 1234, iat: 1665383431 }
 
 // 데이터 검증
 const decodeValue_ver = jwt.verify(token, 'mysecretkey');
-console.log(decodeValue_ver);
+console.log(decodeValue_ver); // { myPayloadData: 1234, iat: 1665383431 }
